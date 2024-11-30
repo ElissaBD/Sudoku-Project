@@ -40,4 +40,36 @@ class Board:
 
     def clear(self):
         if self.selected:
-            row, col = sel
+            row, col = select
+            self.grid[row][col].clear()
+
+
+
+
+'''
+def sketch(self, value)
+	Sets the sketched value of the current selected cell equal to the user entered value.
+	It will be displayed at the top left corner of the cell using the draw() function.
+
+def place_number(self, value)
+	Sets the value of the current selected cell equal to the user entered value. 
+Called when the user presses the Enter key.
+
+def reset_to_original(self)
+	Resets all cells in the board to their original values 
+(0 if cleared, otherwise the corresponding digit).
+
+
+def is_full(self)
+	Returns a Boolean value indicating whether the board is full or not.
+
+def update_board(self)
+	Updates the underlying 2D board with the values in all cells.
+
+def find_empty(self)
+	Finds an empty cell and returns its row and col as a tuple (x,y).
+
+def check_board(self)
+Check whether the Sudoku board is solved correctly.
+'''
+
