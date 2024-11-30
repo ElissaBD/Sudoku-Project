@@ -17,7 +17,7 @@ board_array = generator.get_board()
 play = True
 while play == True:
   if board.is_solved():
-    print("You solved the puzzle!")
+    print("You won!")
     play = False
     board.draw(screen)
 
